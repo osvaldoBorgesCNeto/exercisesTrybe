@@ -1,0 +1,8 @@
+urso
+leao
+tigre
+pantera
+ovelha
+girafa
+rinoceronte
+cachorro
