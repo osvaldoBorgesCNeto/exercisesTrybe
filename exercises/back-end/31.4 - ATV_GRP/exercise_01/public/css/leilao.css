@@ -1,0 +1,10 @@
+.all-itens {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

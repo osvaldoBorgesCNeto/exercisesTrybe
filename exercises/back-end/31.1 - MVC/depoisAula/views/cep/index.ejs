@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MVC - CEP</title>
+  </head>
+  <body>
+    <form action="/cep/cep" method="GET">
+      <label for="cep">
+        CEP:
+        <input type="text" id="cep" name="cep">
+      </label>
+      <button type="submit">Pesquisar CEP</button>
+    </form>
+    <div>
+      <% if (cepData) { %>
+        <p>CEP: <%= cepData.cep %></p>
+        <p>UF: <%= cepData.uf %></p>
+        <p>Cidade: <%= cepData.cidade %></p>
+        <p>Bairo: <%= cepData.bairro %></p>
+        <p>Logradouro: <%= cepData.logradouro %></p>
+      <% } %>
+    </div>
+    <% if (message) { %>
+      <div><%= message %></div>
+    <% } %>
+  </body>
+</html>

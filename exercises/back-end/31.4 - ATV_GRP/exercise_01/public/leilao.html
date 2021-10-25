@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/leilao.css">
+  <title>Leilao de Centavos</title>
+</head>
+<body>
+  <header>
+    <h1>Leilao de centavos</h1>
+  </header>
+  <div class="all-itens">
+    <div class="item">
+      <p>CELULAR</p>
+      <img src="https://cdnv2.moovin.com.br/redecelltronics/imagens/produtos/det/celular-apple-iphone-12-pro-max-128gb-a0ba176a44cd5b6202e775233d239f56.jpg"
+      width="200px" height="200px">
+      <p>R$ <scan id="celValue">20</scan></p>
+      <button type="button" class="buttonLance" name="celValue" cel>Dar um lance</button>
+    </div>
+    <div class="item">
+      <p>TV</p>
+      <img src="https://a-static.mlcdn.com.br/618x463/smart-tv-samsung-50-polegadas-4k-crystal-un50au7700gx/lojasmm/11350/57dd11cfb4e759adeb5a6d7124527bb5.jpg"
+      width="200px" height="200px">
+      <p>R$ <scan id="tvValue">90</scan></p>
+      <button type="button" class="buttonLance" name="tvValue">Dar um lance</button>
+    </div>
+    <div class="item">
+      <p>NOTEBOOK</p>
+      <img src="https://i.dell.com/is/image/DellContent/content/dam/global-site-design/product_images/dell_client_products/notebooks/alienware_notebooks/alienware_17_r5_non_touch/spi/ng/notebook-alienware-17-r5-campaign-hero-504x350-ng.psd?hei=402&qlt=90,0&op_usm=1.75,0.3,2,0&resMode=sharp&pscan=auto&fmt=pjpg"
+      width="200px" height="200px">
+      <p>R$ <scan id="noteValue">5</scan></p>
+      <button type="button" class="buttonLance" name="noteValue">Dar um lance</button>
+    </div>
+    <div class="item">
+      <p>HEADSET</p>
+      <img src="https://m.media-amazon.com/images/I/61JJl260NlL._AC_SL1412_.jpg"
+      width="200px" height="200px">
+      <p>R$ <scan id="headSetValue">15</scan></p>
+      <button type="button" class="buttonLance" name="headSetValue">Dar um lance</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/client.js"></script>
+</body>
+</html>
